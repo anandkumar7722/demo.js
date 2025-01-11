@@ -299,3 +299,4 @@ let arith="hello",
 console.log(arith,"\n",add,"\n",sub,"\n",mul,"\n",div,"\n",mol,"\n",pov)
 let timer="3:17:00";
 console.log(timer)
+let git=2;
