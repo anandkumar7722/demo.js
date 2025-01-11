@@ -5,11 +5,11 @@ console.log(product)
 var total=price+tax
 console.log(total)
 //next
-var fruitname="apple"
+var frui_tname="apple"
 var count=18
 var price =20
 var total=count*price
-console.log(fruitname)
+console.log(frui_tname)
 console.log("the total price:"+total)
 //operator
 var inc=11
@@ -234,4 +234,68 @@ function table(tables){
     }
 }
 table(4)
-//dom
+/* dom
+alert("Xss alert world");
+back must comple js 
+*/ 
+let author="thomas",
+    bname="richdad",
+    earn="$12";
+    console.log(author,"\n", bname, "\n" ,earn); 
+    let name="hello";
+    console.log(name);
+console.log(typeof name)
+console.log(1/0)
+//big int
+//2^53-1
+let limit=900719925470991n;
+console.log(limit+1n)
+let big=12345678910n;
+console.log(big+2025n)
+//string data type 
+let into="hi im anand ";
+console.log(into);
+let quote='he said "i am bat man"';
+console.log(quote);
+//embed
+let emmd=`1+2=${into}`;
+console.log(emmd)
+//boolean 0,1
+let ismale=true;
+let con=5<7
+console.log(con)
+let age=undefined;
+let myn_ame="same"
+console.log(myn_ame)
+let agee=23
+//agee=String(agee)
+console.log(typeof agee)
+agee=Number(agee)
+console.log(agee+3)
+//fun
+let test=1;
+let test1=0;
+let nn=44;
+nn=Boolean(nn);
+test=Boolean(test);
+test1=Boolean(test1);
+console.log(nn,test,test1)
+//unary
+let x=-1;
+x=-x
+console.log(x)
+//
+let varl="software"
+console.log(8**8)
+let elon="skill is very"
+console.log(elon)
+let arith="hello",
+    add=2+8,
+    sub=3-8,
+    mul=5*5,
+    div=6/2,
+    mol=99%2
+    pov=3**3;
+console.log(arith,"\n",add,"\n",sub,"\n",mul,"\n",div,"\n",mol,"\n",pov)
+let timer="3:17:00";
+console.log(timer)
