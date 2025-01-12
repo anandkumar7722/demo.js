@@ -300,3 +300,206 @@ console.log(arith,"\n",add,"\n",sub,"\n",mul,"\n",div,"\n",mol,"\n",pov)
 let timer="3:17:00";
 console.log(timer)
 let git=2;
+//concation
+let aa="hi";
+let bb="hello"
+let sumA=(aa+bb);
+console.log(sumA)
+let al="9";
+let bl="6"
+let suml=Number(al)+Number(bl);
+let sum2=+al + +bl
+console.log(suml)
+console.log(sum2)
+let ch=bc=ac=12;
+console.log(ch,bc,ac)
+//modify in place
+let xx=12;
+xx+=5;
+//inc,dec
+console.log(xx)
+xx++;
+console.log(xx)
+x--;
+console.log(xx)
+--x;
+console.log(xx)
+++x;
+console.log(xx)
+//compare
+//<>
+let a8='0';
+a8=Boolean(a8);
+let b8=0
+b8=Boolean(b8)
+console.log('0'==0)
+//null and undefined
+console.log(null>0)
+console.log(null>=0)
+console.log(null<=0)
+console.log(null==undefined)
+console.log(null==0)
+//conditional
+let isboy;
+let ageisboy =1;
+if(ageisboy>18){
+    isboy=true;
+}else{
+    isboy=false;
+}
+console.log(isboy)
+ var person=(age>18)?'adult':'child';
+ //
+ let xzz=10;
+ if(xzz<0){
+    console.log("the negative")
+ }
+ else if(xzz==0){
+    console.log("the equal")
+ }
+ else if(xzz>0){
+    console.log("the postive")
+ }else{
+    console.log("nan")
+ }
+ let years=2016;
+ //div by4
+ ///div by100
+ //div by 400
+ if(years %4 ==0){
+    if(years % 100==0 ){
+        if(years % 400 ==0){
+            console.log("leap year")
+        }
+        else{
+            console.log(" not leap year")
+        }}
+
+     else{
+        console.log("leap year")
+     }
+    }
+else{
+    console.log("not a leap year")
+}
+    
+let numb=334
+if(numb>0){
+    if(numb%2==0){
+        console.log("the even"+numb);
+    }else{
+        console.log("the odd"+numb);
+    }
+}
+else{
+    console.log("not postive" +numb);
+}
+//logical ops  in 
+//or,and,!,-nullcolescing
+//----------------------------
+// A  B  C
+// 1  1  1
+// 1  0  1
+// 0 1   1
+// 0 0   0
+// not
+//1 0
+//0 1
+console.log(0||1)
+console.log( 1&&0)
+console.log(!1)
+// null
+let asge;
+let set =asge ?? 22;
+console.log(set)
+//loop
+//while,do,for
+let nnum=1
+while(nnum<=5){
+    console.log("hello ")
+    nnum++;
+}
+let nums=11;
+do{
+    console.log(nums);
+    nums++;   
+}while(nums<=10)
+    console.log("the out ");
+for(i=0;i<=5;i++){
+     console.log("the hello world"+i);
+}
+//factorial
+let ns=5;
+let ans=1
+for(let x=1; x<=ns;x++){
+    ans=ans*i;
+    
+}
+console.log(ans);
+let swi=2;
+switch(swi){
+    case 1:
+        console.log("one");
+        break;
+    case 2:
+        console.log("two");
+        break;
+    default:
+        console.log("lastb case");
+}
+///function
+let fo
+function getset(var1=8,var2=9){
+   return fo=console.log((var1+var2*var2/var1)*var2 );
+
+}
+console.log(fo);
+getset(3,5);
+getset(333,58765);
+getset();
+// let iseve=2;
+// let oddoreven;
+// oddoreven=function isevevn(n){
+//     if(n%2==0){
+//         return "even";
+//     }
+//     else{
+//         return "odd ";
+//     }
+// }
+// isevevn(2);
+let testmo=(a,b)=>a+b;
+console.log(testmo(2,5));
+function operator(op,a,b){
+    return op(a,b);
+}
+function dub(a,b){
+    return a-b;
+}
+console.log(operator(dub,88,99));
+let fivex=(n)=>5*n;
+console.log(fivex(44));
+//object
+let xcv={
+
+}
+console.log(typeof(xcv));
+let car={
+    name:'R8',
+    brand:'audio',
+    driven:'ev,petrol,diesel',
+    price:'40'+nnum,
+    ondr(price){
+        return this.price+3;
+
+    }
+};
+console.log(car.price);
+delete car.price;
+console.log(car.price);
+car['price']=40;
+console.log(car.price);
+console.log(car);
+car['price']='55';
+console.log(car);
+console.log(car.ondr(33));
