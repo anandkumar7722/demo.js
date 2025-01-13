@@ -503,3 +503,198 @@ console.log(car);
 car['price']='55';
 console.log(car);
 console.log(car.ondr(33));
+console.log(car.name);
+car.name='audioR8';
+console.log(car.name);
+console.log('dob' in car);
+console.log('price' in car);
+for(key in car){
+    console.log(car[key]);
+}
+let ger={
+    named:'goms',
+}
+function User(a){
+    this.named='goms'+a;
+    this.agee=function(a){
+        return a**8;
+    }
+}
+let goms =new User("pofe");
+let goms1 =new User("poferr");
+let goms2 =new User("poferr");
+console.log(goms.agee(77));
+console.log(goms1);
+console.log(goms2);
+function Adder(){
+    this.adders=5;
+    this.subber=10;
+    this.adders=function(c){
+        return this.adders+this.subber+c;
+    }
+}
+let testersum=new Adder();
+console.log(testersum.adders(5));
+//array
+let veg =new Array();
+veg=['carrot','beetroot'];
+console.log(veg[0]);
+console.log(veg[1]);
+veg[2]='apple';
+console.log(veg);
+veg.push('root');
+console.log(veg);
+veg.unshift('bens');
+console.log(veg);
+veg.pop();
+console.log(veg);
+for (item of veg){
+    console.log(item);
+}
+let matric=[
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+console.log(matric);
+for (let h=0;h<matric;h++){
+    for(let v=0;h<matric[i].length;v++){
+        console.log(mat[i][j]);
+    }
+
+}
+//map
+let map =new Map();
+console.log(typeof(map));
+map.set(1,'code')
+    .set(2,'pro');
+console.log(map.size);
+
+let seet= new Set();
+seet.add('code')
+    .add('openio');
+
+console.log(seet);
+
+function facto(n){
+    if(n==1){
+        return 1;
+    }
+    return n+facto(n-1);
+}
+
+function ffacto(n){
+    if(n==1){
+        return 1;
+    }
+    return n*ffacto(n-1);
+}
+console.log(facto(5));
+//console.log(ffactot(5));
+//class
+let cache={
+    named:'gamer',
+    aged:'22',
+    display: function(){
+
+    }
+};
+class Cache{
+    named='bomb';
+    age=21;
+}
+let gomsd=new Cache();
+console.log(gomsd.age);
+//8:36
+//inheritance
+class Animal{
+    legs;
+    tail;
+
+
+    constructor(legs,tail){
+        this.legs=legs;
+        this.tail=tail;
+    }
+    display(){
+        console.log(this.legs);
+        console.log(this.tail);
+    }
+}
+class Human extends Animal{
+    national;
+
+    constructor(legs,tails,national){
+        super(legs,tails);
+        this.national=national;
+    }
+}
+
+let animee=new Animal(2,true);
+animee.display();
+let humane=new Human(3,false);
+humane.display();
+console.log(humane);
+//error handler
+let ece=undefined;
+
+try{
+    console.log(ece.named);
+}
+catch(error){
+    console.log('error catch');
+    //console.log(error);
+   // throw new SyntaxError();
+}
+/*function wait(){
+ return new Promise((acc,res)=>{
+    setTimeout(()=>{
+        if(isbuy()){
+            
+        }
+    });
+ });
+}
+function buy(){
+    wait();
+}
+*/
+//dom
+let iseve=2;
+let oddoreven;
+oddoreven=function isevevn(n){
+    if(n%2==0){
+        return "even";
+    }
+    else{
+        return "odd ";
+    }
+}
+oddoreven(2);
+console.log(oddoreven(2));
+console.log(oddoreven(4));
+console.log(oddoreven(1));
+console.log(oddoreven(9));
+for (i=0;i<=30;i++){
+   console.log("value i:"+i)
+   for(j=0;j<=30;j++){
+       console.log("value :j"+j);    
+   }    
+}
+// var req=200
+// var res=200
+// var port=true
+// var ftp=true
+
+
+function check(state, req,ftp, port) {
+   if ((state == 200 && req == 200) || (port == true && ftp == true)) {
+       console.log("the server is working");
+   } else {
+       console.log("the server is not working");
+   }
+}
+//check(404, 404, true, true, false);
+check(200, 200, true, true);
+check(404, 404, true, false);
+console.log("endd");
